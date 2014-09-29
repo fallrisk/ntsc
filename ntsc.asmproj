@@ -14,7 +14,7 @@
     <AssemblyName>ntsc</AssemblyName>
     <Name>ntsc</Name>
     <RootNamespace>ntsc</RootNamespace>
-    <EntryFile>$(MSBuildProjectDirectory)\ntsc.asm</EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\blink.asm</EntryFile>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -54,6 +54,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="blink.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="drawntscimage.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ntsc.asm">
       <SubType>Code</SubType>
     </Compile>
